@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var total = 0
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            Text("\(total)")
+                .padding()
+            
+            Button {
+                total += 1
+            } label: {
+                Text("+1")
+            }
+            .padding()
+
+            Button {
+                total = 0
+            } label: {
+                Text("Clear")
+            }
+            .padding()
+            
         }
-        .padding()
     }
 }
 
