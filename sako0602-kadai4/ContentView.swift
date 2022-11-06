@@ -3,7 +3,7 @@
 //  sako0602-kadai4
 //
 //  Created by sako0602 on 2022/11/05.
-//
+//  課題３変更
 
 import SwiftUI
 
